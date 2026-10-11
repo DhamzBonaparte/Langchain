@@ -1,0 +1,20 @@
+from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
+from langchain_google_genai import ChatGoogleGenerativeAI
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+model = ChatGoogleGenerativeAI(
+    model="gemini-3.5-flash-lite", google_api_key=os.getenv("GEMINI_API_KEY_4")
+)
+
+messages = [
+    SystemMessage(content="You are a helpful Assistent"),
+    HumanMessage(content="Tell me about LangChain"),
+]
+
+result = model.invoke(messages)
+messages.append(AIMessage(content=result.content[0]["text"]))
+
+print(messages)
