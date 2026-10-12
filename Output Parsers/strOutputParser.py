@@ -17,4 +17,11 @@ template = PromptTemplate(
 template2 = PromptTemplate(
     template="Summarize about {text} in 5 points ", input_variables=["text"]
 )
+
 parser = StrOutputParser()
+
+chain = template | model | parser | template2 | model | parser
+
+result=chain.invoke({"topic": "black hole"})
+
+print(result)
