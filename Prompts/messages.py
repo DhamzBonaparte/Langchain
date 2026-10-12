@@ -10,7 +10,7 @@ model = ChatGoogleGenerativeAI(
 )
 
 messages = [
-    SystemMessage(content="You are a helpful Assistent"),
+    SystemMessage(content="You are a helpful Assistant"),
     HumanMessage(content="Tell me about LangChain"),
 ]
 
