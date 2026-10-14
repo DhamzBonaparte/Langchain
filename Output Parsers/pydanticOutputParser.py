@@ -11,12 +11,10 @@ model = ChatGoogleGenerativeAI(
     model="gemini-3.5-flash-lite", google_api_key=os.getenv("GEMINI_API_KEY_2")
 )
 
-
 class Person(BaseModel):
     name: str = Field(description="Name of the person")
     age: int = Field(gt=18, lt=60, description="Age of the person")
     city: str = Field(description="Name of the city the person belongs to")
-
 
 parser = PydanticOutputParser(pydantic_object=Person)
 
