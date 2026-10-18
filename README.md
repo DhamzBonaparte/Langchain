@@ -1,4 +1,4 @@
-# LangChain Practice 🚀
+# LangChain Fundamentals🚀
 
 A comprehensive repository containing hands-on code examples, practice scripts, and architecture implementations exploring core concepts and workflows of the **LangChain** ecosystem.
 
