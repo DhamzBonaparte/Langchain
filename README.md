@@ -39,8 +39,7 @@ Ensure you have Python 3.9 or higher installed on your system.
 
 ### 2. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/LangChain-Practise.git
-cd LangChain-Practise
+git clone https://github.com/DhamzBonaparte/Langchain.git
 ```
 
 ### 3. Create & Activate Virtual Environment
