@@ -64,16 +64,13 @@ pip install -r requirements.txt
 Create a `.env` file in the root directory and add your API credentials:
 
 ```env
-OPENAI_API_KEY=your_openai_api_key
-ANTHROPIC_API_KEY=your_anthropic_api_key
-
-# Optional: LangSmith Tracing
-LANGCHAIN_TRACING_V2=true
-LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
-LANGCHAIN_API_KEY=your_langsmith_api_key
-LANGCHAIN_PROJECT="LangChain-Practise"
-```
-
+GEMINI_API_KEY="API_KEY_1"
+GEMINI_API_KEY_2="API_KEY_2"
+GEMINI_API_KEY_3="API_KEY_3"
+GEMINI_API_KEY_4="API_KEY_4"
+GEMINI_API_KEY_5="API_KEY_5"
+HF_TOKEN="HF_TOKEN"
+API_KEY="API_KEY_FOR_CURRENCY_EXCHANGE"
 ---
 
 ## 🚀 Running Examples
